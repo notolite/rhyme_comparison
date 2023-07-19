@@ -1,0 +1,86 @@
+table {
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 3000px;
+    font-size: smaller;
+}
+
+table tr td,
+table tr th {
+    border-top: #888 1px dotted;
+    border-left: #888 1px dotted;
+    padding: 2px;
+    margin: 0;
+}
+
+table tr:nth-last-of-type(4n) td {
+    border-top: #888 1px solid;
+}
+
+table tr:first-of-type th {
+    border-top: none;
+}
+
+table tr th:first-of-type {
+    border-left: none;
+}
+
+table {
+    border: #888 1px solid;
+}
+
+.蟹 {
+    background: rgb(255, 217, 102);
+}
+
+.止 {
+    background: rgb(255, 242, 204);
+}
+
+.果仮 {
+    background: rgb(244, 186, 142);
+}
+
+.遇 {
+    background: rgb(252, 228, 214);
+}
+
+.山 {
+    background: rgb(169, 208, 142);
+}
+
+.臻 {
+    background: rgb(226, 239, 218);
+}
+
+.効 {
+    background: rgb(155, 194, 230);
+}
+
+.流 {
+    background: rgb(221, 235, 247);
+}
+
+.咸 {
+    background: rgb(142, 169, 219);
+}
+
+.深 {
+    background: rgb(217, 225, 242);
+}
+
+.宕梗 {
+    background: rgb(197, 158, 226);
+}
+
+.曽 {
+    background: rgb(228, 210, 242);
+}
+
+.江 {
+    background: rgb(223, 149, 212);
+}
+
+.通 {
+    background: rgb(239, 191, 223);
+}
