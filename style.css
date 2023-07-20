@@ -1,3 +1,13 @@
+fieldset,
+legend {
+    display: inline;
+    border: none;
+}
+
+#result {
+    display: inline;
+}
+
 table {
     border-spacing: 0;
     table-layout: fixed;
@@ -28,6 +38,13 @@ table tr th:first-of-type {
 table {
     border: #888 1px solid;
 }
+
+.hitcells {
+    color: darkred;
+    font-weight: bold;
+    border: darkred 3px solid;
+}
+
 
 .蟹 {
     background: rgb(255, 217, 102);
@@ -83,4 +100,22 @@ table {
 
 .通 {
     background: rgb(239, 191, 223);
+}
+
+dl {
+    line-height: 1.7;
+    float: left;
+    margin: 10px;
+}
+
+dt {
+    float: left;
+}
+
+dd {
+    margin-left: 50px;
+}
+
+section {
+    clear: both;
 }
