@@ -9,9 +9,9 @@ function search(keyword, dialect) {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 28; j++) {
             if (i > 3 && i < 7 && j > 19) { continue; }
-            let targetcell = targettable.rows[4 * i + parseInt(dialect)].cells[j];
+            let targetcell = targettable.rows[5 * i + parseInt(dialect)].cells[j];
             let targettext = targetcell.innerText;
-            targettext = " " + targettext.replaceAll(/([\[\]\(\)"'])/g, "").replaceAll(/\n/g, " ") + " ";
+            targettext = " " + targettext.replaceAll(/([\[\]\(\)"',])/g, "").replaceAll(/\n/g, " ") + " ";
             console.log(targettext);
             if (targettext.includes(" " + keyword + " ")) {
                 targetcell.classList.add("hitcells");
@@ -19,7 +19,6 @@ function search(keyword, dialect) {
             } else {
                 targetcell.classList.remove("hitcells");
             }
-
         }
     }
     document.getElementById("result").innerText = "検索結果は" + hit + "件です。";
