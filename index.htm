@@ -18,6 +18,15 @@
     <button id="searchbutton">search</button>
     <p id="result"></p>
   </form>
+  <form name="hide" onsubmit="return false;">
+    <legend>表示する方言を選択：</legend>
+    <fieldset>
+      <input type="checkbox" id="h_row3" name="row" value="3" checked><label for="h_row3">普通話</label>
+      <input type="checkbox" id="h_row4" name="row" value="4" checked><label for="h_row4">広州話</label>
+      <input type="checkbox" id="h_row5" name="row" value="5" checked><label for="h_row5">朝鮮語</label>
+      <button id="hidebutton">apply</button>
+    </fieldset>
+  </form>
   <table>
     <tr>
       <th></th>
@@ -91,7 +100,7 @@
       <th>-y-</th>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-∅</th>
+      <th>-∅</th>
       <td class="蟹">re</td>
       <td class="蟹">rue</td>
       <td></td>
@@ -272,7 +281,7 @@
       <td></td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-i</th>
+      <th>-i</th>
       <td class="蟹">rei</td>
       <td class="蟹">ruei</td>
       <td class="蟹">ei</td>
@@ -452,7 +461,7 @@
       <td class="止">yu</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-n</th>
+      <th>-n</th>
       <td class="山">ren</td>
       <td class="山">ruen</td>
       <td class="山">en</td>
@@ -608,7 +617,7 @@
       <td class="臻">T: yun<br>CS: un</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-t</th>
+      <th>-t</th>
       <td class="山">ret</td>
       <td class="山">ruet</td>
       <td class="山">et</td>
@@ -764,7 +773,7 @@
       <td class="臻">T: yut<br>CS: ut</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-u</th>
+      <th>-u</th>
       <td colspan=2></td>
       <td colspan=2 class="効">eu</td>
       <td colspan=2 class="効">rieu</td>
@@ -852,7 +861,7 @@
       <td colspan=2 class="流">au</td>
       <td colspan=2 class="流">au</td>
     </tr>
-    <tr class="朝鮮話">
+    <tr class="朝鮮語">
       <td colspan=2></td>
       <td colspan=2 class="効">o, yo<br>PTK: yo<br>CS: o</td>
       <td colspan=2 class="効">yo</td>
@@ -875,7 +884,7 @@
       <td colspan=2 class="流">P: yo<br>K: u<br>qu: yu</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-m</th>
+      <th>-m</th>
       <td colspan=2 class="咸">rem</td>
       <td colspan=2 class="咸">em</td>
       <td colspan=2 class="咸">riem</td>
@@ -986,7 +995,7 @@
       <td colspan=2 class="深">im</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-p</th>
+      <th>-p</th>
       <td colspan=2 class="咸">rep</td>
       <td colspan=2 class="咸">ep</td>
       <td colspan=2 class="咸">riep</td>
@@ -1097,7 +1106,7 @@
       <td colspan=2 class="深">ip</td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-&#331;</th>
+      <th>-&#331;</th>
       <td class="宕梗">re&#331;</td>
       <td class="宕梗">rue&#331;</td>
       <td class="宕梗">e&#331;</td>
@@ -1248,7 +1257,7 @@
       <td></td>
     </tr>
     <tr class="隋語">
-      <th rowspan=5>-k</th>
+      <th>-k</th>
       <td class="宕梗">rek</td>
       <td class="宕梗">ruek</td>
       <td class="宕梗">ek</td>
@@ -1460,7 +1469,7 @@
     </p>
   </section>
   <script src="search.js"></script>
-
+  <script src="hide.js"></script>
 
 </body>
 
