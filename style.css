@@ -1,3 +1,8 @@
+h1 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 fieldset,
 legend {
     display: inline;
@@ -22,28 +27,28 @@ table tr th {
     margin: 0;
 }
 
-table tr:nth-last-of-type(5n) td {
+table tr:nth-last-of-type(6n) td {
     border-top: #888 1px solid;
 }
 
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:first-of-type,
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:nth-of-type(9),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:nth-of-type(15),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:nth-of-type(19),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:nth-of-type(23),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) td:nth-of-type(25),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(2),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(10),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(16),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(20),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(24),
-table tr:not(:nth-of-type(n+24):nth-of-type(-n+38)) th:nth-of-type(26),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:first-of-type,
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:nth-of-type(9),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:nth-of-type(15),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:nth-of-type(19),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:nth-of-type(23),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) td:nth-of-type(25),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(2),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(10),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(16),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(20),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(24),
+table tr:not(:nth-of-type(n+28):nth-of-type(-n+45)) th:nth-of-type(26),
 table tr:first-of-type th,
-table tr:nth-of-type(n+24):nth-of-type(-n+38) td:nth-of-type(5),
-table tr:nth-of-type(n+24):nth-of-type(-n+38) td:nth-of-type(9),
-table tr:nth-of-type(n+24):nth-of-type(-n+38) td:nth-of-type(13),
-table tr:nth-of-type(n+24):nth-of-type(-n+38) td:nth-of-type(17),
-table tr:nth-of-type(n+24):nth-of-type(-n+38) td:nth-of-type(19) {
+table tr:nth-of-type(n+28):nth-of-type(-n+45) td:nth-of-type(5),
+table tr:nth-of-type(n+28):nth-of-type(-n+45) td:nth-of-type(9),
+table tr:nth-of-type(n+28):nth-of-type(-n+45) td:nth-of-type(13),
+table tr:nth-of-type(n+28):nth-of-type(-n+45) td:nth-of-type(17),
+table tr:nth-of-type(n+28):nth-of-type(-n+45) td:nth-of-type(19) {
     border-left: #888 1px solid;
 }
 
