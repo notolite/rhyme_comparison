@@ -12,11 +12,11 @@
     <legend>現代の発音から検索：</legend>
     <input type="text" name="entry">
     <fieldset>
-      <input type="checkbox" name="s_row" value="3" checked><label for="s_row3">普通話</label>
-      <input type="checkbox" name="s_row" value="4"><label for="s_row4">広州話</label>
-      <input type="checkbox" name="s_row" value="5"><label for="s_row5">朝鮮語</label>
-      <input type="checkbox" name="s_row" value="6"><label for="s_row6">日本語（漢音）</label>
-      <input type="checkbox" name="s_row" value="7"><label for="s_row7">日本語（呉音）</label>
+      <input type="checkbox" id="s_row3" name="s_row" value="3" checked><label for="s_row3">普通話</label>
+      <input type="checkbox" id="s_row4" name="s_row" value="4"><label for="s_row4">広州話</label>
+      <input type="checkbox" id="s_row5" name="s_row" value="5"><label for="s_row5">朝鮮語</label>
+      <input type="checkbox" id="s_row6" name="s_row" value="6"><label for="s_row6">日本語（漢音）</label>
+      <input type="checkbox" id="s_row7" name="s_row" value="7"><label for="s_row7">日本語（呉音）</label>
     </fieldset>
     <button id="searchbutton">search</button>
     <button id="clearbutton">clear results</button>
@@ -25,11 +25,11 @@
   <form name="hide" onsubmit="return false;">
     <legend>表示する方言を選択：</legend>
     <fieldset>
-      <input type="checkbox" name="h_row" value="普通話" checked><label for="h_row3">普通話</label>
-      <input type="checkbox" name="h_row" value="広州話" checked><label for="h_row4">広州話</label>
-      <input type="checkbox" name="h_row" value="朝鮮語" checked><label for="h_row5">朝鮮語</label>
-      <input type="checkbox" name="h_row" value="漢音" checked><label for="h_row6">日本語（漢音）</label>
-      <input type="checkbox" name="h_row" value="呉音" checked><label for="h_row7">日本語（呉音）</label>
+      <input type="checkbox" id="h_row3" name="h_row" value="普通話" checked><label for="h_row3">普通話</label>
+      <input type="checkbox" id="h_row4" name="h_row" value="広州話" checked><label for="h_row4">広州話</label>
+      <input type="checkbox" id="h_row5" name="h_row" value="朝鮮語" checked><label for="h_row5">朝鮮語</label>
+      <input type="checkbox" id="h_row6" name="h_row" value="漢音" checked><label for="h_row6">日本語（漢音）</label>
+      <input type="checkbox" id="h_row7" name="h_row" value="呉音" checked><label for="h_row7">日本語（呉音）</label>
       <button id="hidebutton">apply</button>
     </fieldset>
   </form>
