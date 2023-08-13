@@ -47,11 +47,21 @@ document.getElementById("searchbutton").addEventListener("click", () => {
         }
     }
     search(keyword, dialects);
-})
+});
+document.getElementById("clearbutton").addEventListener("click", () => {
+    clearresults();
+});
+function clearresults() {
+    Array.from(document.getElementsByTagName("table")[0].rows).forEach(row => {
+        Array.from(row.cells).forEach(cell => {
+            cell.classList.remove("hitcells");
+        })
+    })
+    document.getElementById("result").innerText = "";
+}
 function search(keyword, dialects) {
     let targettable = document.getElementsByTagName("table")[0];
     let hit = 0;
-    console.log(dialects);
     dialects.forEach(dialect => {
         for (let i = 0; i < 9; i++) {
             for (let j = 0; j < 28; j++) {
