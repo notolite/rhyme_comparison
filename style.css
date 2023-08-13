@@ -27,28 +27,15 @@ table tr th {
     margin: 0;
 }
 
+/* 方言追加時に変更 */
 table tr:nth-last-of-type(7n) td {
     border-top: #888 1px solid;
 }
 
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:first-of-type,
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:nth-of-type(9),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:nth-of-type(15),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:nth-of-type(19),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:nth-of-type(23),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) td:nth-of-type(25),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(2),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(10),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(16),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(20),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(24),
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) th:nth-of-type(26),
+/*方言追加時に変更 始まり：3+方言数×4 終わり：3+方言数×7 */
+table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) :is(td:first-of-type, td:nth-of-type(9), td:nth-of-type(15), td:nth-of-type(19), td:nth-of-type(23), td:nth-of-type(25), th:nth-of-type(2), th:nth-of-type(10), th:nth-of-type(16), th:nth-of-type(20), th:nth-of-type(24), th:nth-of-type(26)),
 table tr:first-of-type th,
-table tr:nth-of-type(n+32):nth-of-type(-n+52) td:nth-of-type(5),
-table tr:nth-of-type(n+32):nth-of-type(-n+52) td:nth-of-type(9),
-table tr:nth-of-type(n+32):nth-of-type(-n+52) td:nth-of-type(13),
-table tr:nth-of-type(n+32):nth-of-type(-n+52) td:nth-of-type(17),
-table tr:nth-of-type(n+32):nth-of-type(-n+52) td:nth-of-type(19) {
+table tr:nth-of-type(n+32):nth-of-type(-n+52) :is(td:first-of-type, td:nth-of-type(5), td:nth-of-type(9), td:nth-of-type(13), td:nth-of-type(17), td:nth-of-type(19)) {
     border-left: #888 1px solid;
 }
 
