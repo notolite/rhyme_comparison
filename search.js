@@ -9,7 +9,7 @@ function search(keyword, dialect) {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 28; j++) {
             if (i > 3 && i < 7 && j > 19) { continue; }
-            let targetcell = targettable.rows[6 * i + parseInt(dialect)].cells[j];
+            let targetcell = targettable.rows[7 * i + parseInt(dialect)].cells[j];
             let targettext = targetcell.innerText;
             targettext = " " + targettext.replaceAll(/([\[\]\(\)"',])/g, "").replaceAll(/\n/g, " ") + " ";
             if (targettext.includes(" " + keyword + " ")) {
