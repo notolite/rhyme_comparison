@@ -14,11 +14,11 @@ function hideMain() {
     const rows = document.getElementsByTagName("table")[0].rows;
     let hide = dialectnum;
     setRowSpan(rows, hide);
-    const 官話 = document.forms.hide.row[0].checked;
-    const 粤語 = document.forms.hide.row[1].checked;
-    const 韓語 = document.forms.hide.row[2].checked;
-    const 漢音 = document.forms.hide.row[3].checked;
-    const 呉音 = document.forms.hide.row[4].checked;
+    const 官話 = document.forms.hide.h_row[0].checked;
+    const 粤語 = document.forms.hide.h_row[1].checked;
+    const 韓語 = document.forms.hide.h_row[2].checked;
+    const 漢音 = document.forms.hide.h_row[3].checked;
+    const 呉音 = document.forms.hide.h_row[4].checked;
     if (!官話) { addHideAttribute(putrow); hide--; } else { removeHideAttribute(putrow); }
     if (!粤語) { addHideAttribute(guarow); hide--; } else { removeHideAttribute(guarow); }
     if (!韓語) { addHideAttribute(korrow); hide--; } else { removeHideAttribute(korrow); }
@@ -40,25 +40,33 @@ function removeHideAttribute(rows) {
 }
 document.getElementById("searchbutton").addEventListener("click", () => {
     let keyword = document.forms.search.entry.value;
-    let dialect = document.forms.search.dialect.value;
-    search(keyword, dialect);
-})
-function search(keyword, dialect) {
-    let targettable = document.getElementsByTagName("table")[0];
-    let hit = 0;
-    for (let i = 0; i < 9; i++) {
-        for (let j = 0; j < 28; j++) {
-            if (i > 3 && i < 7 && j > 19) { continue; }
-            let targetcell = targettable.rows[dialectnum * i + parseInt(dialect)].cells[j];
-            let targettext = targetcell.innerText;
-            targettext = " " + targettext.replaceAll(/([\[\]\(\)"',])/g, "").replaceAll(/\n/g, " ") + " ";
-            if (targettext.includes(" " + keyword + " ")) {
-                targetcell.classList.add("hitcells");
-                hit++;
-            } else {
-                targetcell.classList.remove("hitcells");
-            }
+    let dialects = new Array();
+    for (let i = 0; i < dialectnum - 2; i++) {
+        if (document.forms.search.s_row[i].checked) {
+            dialects.push(document.forms.search.s_row[i].value);
         }
     }
+    search(keyword, dialects);
+})
+function search(keyword, dialects) {
+    let targettable = document.getElementsByTagName("table")[0];
+    let hit = 0;
+    console.log(dialects);
+    dialects.forEach(dialect => {
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 28; j++) {
+                if (i > 3 && i < 7 && j > 19) { continue; }
+                let targetcell = targettable.rows[dialectnum * i + parseInt(dialect) + 2].cells[j];
+                let targettext = targetcell.innerText;
+                targettext = " " + targettext.replaceAll(/([\[\]\(\)"',])/g, "").replaceAll(/\n/g, " ") + " ";
+                if (targettext.includes(" " + keyword + " ")) {
+                    targetcell.classList.add("hitcells");
+                    hit++;
+                } else {
+                    targetcell.classList.remove("hitcells");
+                }
+            }
+        }
+    })
     document.getElementById("result").innerText = "検索結果は" + hit + "件です。";
 }
