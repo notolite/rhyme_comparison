@@ -14,9 +14,10 @@
     <fieldset>
       <input type="checkbox" id="s_row3" name="s_row" value="3" checked><label for="s_row3">普通話</label>
       <input type="checkbox" id="s_row4" name="s_row" value="4"><label for="s_row4">広州話</label>
-      <input type="checkbox" id="s_row5" name="s_row" value="5"><label for="s_row5">朝鮮語</label>
-      <input type="checkbox" id="s_row6" name="s_row" value="6"><label for="s_row6">日本語（漢音）</label>
-      <input type="checkbox" id="s_row7" name="s_row" value="7"><label for="s_row7">日本語（呉音）</label>
+      <input type="checkbox" id="s_row5" name="s_row" value="5"><label for="s_row5">台湾話（文読）</label>
+      <input type="checkbox" id="s_row6" name="s_row" value="6"><label for="s_row6">朝鮮語</label>
+      <input type="checkbox" id="s_row7" name="s_row" value="7"><label for="s_row7">日本語（漢音）</label>
+      <input type="checkbox" id="s_row8" name="s_row" value="8"><label for="s_row8">日本語（呉音）</label>
     </fieldset>
     <button id="searchbutton">search</button>
     <button id="clearbutton">clear results</button>
@@ -27,9 +28,10 @@
     <fieldset>
       <input type="checkbox" id="h_row3" name="h_row" value="普通話" checked><label for="h_row3">普通話</label>
       <input type="checkbox" id="h_row4" name="h_row" value="広州話" checked><label for="h_row4">広州話</label>
-      <input type="checkbox" id="h_row5" name="h_row" value="朝鮮語" checked><label for="h_row5">朝鮮語</label>
-      <input type="checkbox" id="h_row6" name="h_row" value="漢音" checked><label for="h_row6">日本語（漢音）</label>
-      <input type="checkbox" id="h_row7" name="h_row" value="呉音" checked><label for="h_row7">日本語（呉音）</label>
+      <input type="checkbox" id="h_row5" name="h_row" value="台語" checked><label for="h_row5">台湾語（文読）</label>
+      <input type="checkbox" id="h_row6" name="h_row" value="朝鮮語" checked><label for="h_row6">朝鮮語</label>
+      <input type="checkbox" id="h_row7" name="h_row" value="漢音" checked><label for="h_row7">日本語（漢音）</label>
+      <input type="checkbox" id="h_row8" name="h_row" value="呉音" checked><label for="h_row8">日本語（呉音）</label>
       <button id="hidebutton">apply</button>
     </fieldset>
   </form>
@@ -256,6 +258,36 @@
       <td></td>
       <td></td>
     </tr>
+    <tr class="台語">
+      <td class="蟹">a, ai<br>n/m/ŋ: ainn, a</td>
+      <td class="蟹">ua, uai, uainn</td>
+      <td></td>
+      <td></td>
+      <td class="止">i, e<br>n/m: i, inn</td>
+      <td class="止">ui</td>
+      <td class="止">i, e<br>n/m: i, inn</td>
+      <td class="止">ui</td>
+      <td class="果仮">a, ann</td>
+      <td class="果仮">ua, uann</td>
+      <td class="果仮">o<br>n/ŋ: onn</td>
+      <td class="果仮">o<br>m/n/ŋ: onn<br>xr: o, onn</td>
+      <td class="果仮">ia [a]<br>m: iann<br>c: ia, iann</td>
+      <td class="果仮">o, io</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="止">i<br>S/Sr: i, u<br>n/nь: i, inn</td>
+      <td></td>
+      <td class="遇">oo<br>n/ŋ: onn</td>
+      <td class="遇">T/Tr/K: u, i<br>S/Sr: u, oo</td>
+      <td class="遇">PD: u, oo<br>K: u, i</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr class="朝鮮語">
       <td class="蟹">ae</td>
       <td class="蟹">T: oe, ae<br>CK: oe</td>
@@ -322,9 +354,9 @@
       <td></td>
       <td></td>
       <td class="止">i<br>Sr/S/Tь/Nь: i, e</td>
-      <td class="止">P: i<br>K: wi<br>D: ui<br>j: jui</td>
+      <td class="止">P: i<br>K: wi<br>D: ui<br>j: yui</td>
       <td class="止">i<br>Sr/S/Tь/Nь: i, e</td>
-      <td class="止">P: i<br>K: wi<br>D: ui<br>j: jui</td>
+      <td class="止">P: i<br>K: wi<br>D: ui<br>j: yui</td>
       <td class="果仮">P: a, e<br>K: e, a<br>Sr: ya, a<br>Tr: a</td>
       <td class="果仮">we, wa</td>
       <td class="果仮">a<br>S: a, ya</td>
@@ -338,7 +370,7 @@
       <td></td>
       <td class="遇">P/T/l: u, o<br>K/S: o, u<br>q: u, vo</td>
       <td class="遇">K/Sr/S/l: o, yo<br>Tь: yo, o<br>j/Nь/Tr: yo</td>
-      <td class="遇">P/K/l: u<br>j: ju, juu<br>Sr: yu<br>Tь/S: yu, yuu<br>Nь: yuu<br>Tr: yuu, u</td>
+      <td class="遇">P/K/l: u<br>j: yu, yuu<br>Sr: yu<br>Tь/S: yu, yuu<br>Nь: yuu<br>Tr: yuu, u</td>
       <td></td>
       <td></td>
       <td></td>
@@ -496,6 +528,36 @@
       <td class="止">D: eoi<br>
         K: ai</td>
     </tr>
+    <tr class="台語">
+      <td class="蟹">ai</td>
+      <td class="蟹">uai, 'ai'</td>
+      <td class="蟹">e 'i'</td>
+      <td class="蟹">e, ui, ue</td>
+      <td class="蟹">e</td>
+      <td class="蟹">ui, ue</td>
+      <td class="蟹">e</td>
+      <td class="蟹">ui, ue</td>
+      <td class="蟹">ai, m/n/ŋ: ainn</td>
+      <td class="蟹">uai</td>
+      <td class="蟹">ai<br>m/n/ŋ: ainn</td>
+      <td class="蟹">ue</td>
+      <td class="蟹">ue</td>
+      <td></td>
+      <td class="蟹">ai<br>P/C: ai, ainn</td>
+      <td></td>
+      <td></td>
+      <td class="止">i</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="蟹">ue</td>
+      <td class="蟹">P: ue<br>m: uinn<br>D/K: ui, ue</td>
+      <td class="止">ui<br>my: i, ui</td>
+      <td class="止">i<br>S: i, u<br>Sr: i, u, e<br>nь: i, inn</td>
+      <td class="止">ui</td>
+      <td class="止">i<br>S: i, u<br>Sr: i, u, e<br>nь: i, inn</td>
+      <td class="止">ui</td>
+    </tr>
     <tr class="朝鮮語">
       <td class="蟹">ae</td>
       <td class="蟹">oe</td>
@@ -580,11 +642,11 @@
       <td></td>
       <td class="蟹">廃合</td>
       <td class="蟹">P/S: ai<br>K: we<br>T/l: ai, ui, a</td>
-      <td class="止">P: i<br>K: wi<br>D: ui<br>j: jui</td>
+      <td class="止">P: i<br>K: wi<br>D: ui<br>j: yui</td>
       <td class="止">i<br>Sr/S/Tь/Nь: i, e</td>
-      <td class="止">P: i<br>K: wi<br>D: ui<br>j: jui</td>
+      <td class="止">P: i<br>K: wi<br>D: ui<br>j: yui</td>
       <td class="止">i<br>Sr/S/Tь/Nь: i, e</td>
-      <td class="止">P: i<br>K: wi<br>D: ui<br>j: jui</td>
+      <td class="止">P: i<br>K: wi<br>D: ui<br>j: yui</td>
     </tr>
     <tr class="隋語">
       <th>-n</th>
@@ -711,6 +773,36 @@
       <td class="臻">an</td>
       <td class="臻">D: eon<br>
         K: an</td>
+    </tr>
+    <tr class="台語">
+      <td class="山">an</td>
+      <td class="山">uan</td>
+      <td class="山">ian</td>
+      <td class="山">ian</td>
+      <td class="山">ian<br>C: an</td>
+      <td class="山">uan</td>
+      <td class="山">ian<br>C: an</td>
+      <td class="山">uan</td>
+      <td class="山">an, ian</td>
+      <td class="山">uan</td>
+      <td class="山">an</td>
+      <td class="山">uan, 'uan an'</td>
+      <td class="臻">ian</td>
+      <td></td>
+      <td class="臻">un, in</td>
+      <td></td>
+      <td></td>
+      <td class="臻">in, un</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="臻">uan 'an'</td>
+      <td class="臻">un</td>
+      <td class="臻">un</td>
+      <td class="臻">in [in un]</td>
+      <td class="臻">un 'in'</td>
+      <td class="臻">in [in un]</td>
+      <td class="臻">un</td>
     </tr>
     <tr class="朝鮮語">
       <td class="山">an</td>
@@ -928,6 +1020,36 @@
       <td class="臻">D: eot<br>
         K: at</td>
     </tr>
+    <tr class="台語">
+      <td class="山">at</td>
+      <td class="山">uat</td>
+      <td class="山">iat</td>
+      <td class="山">uat, iat</td>
+      <td class="山">iat</td>
+      <td class="山">uat</td>
+      <td class="山">iat</td>
+      <td class="山">uat</td>
+      <td class="山">at</td>
+      <td class="山">uat</td>
+      <td class="山">at</td>
+      <td class="山">uat</td>
+      <td class="臻">iat</td>
+      <td></td>
+      <td class="臻">ut</td>
+      <td></td>
+      <td></td>
+      <td class="臻">it</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="臻">uat</td>
+      <td class="臻">ut</td>
+      <td class="臻">ut</td>
+      <td class="臻">it</td>
+      <td class="臻">ut</td>
+      <td class="臻">it</td>
+      <td class="臻">ut</td>
+    </tr>
     <tr class="朝鮮語">
       <td class="山">at</td>
       <td class="山">wat</td>
@@ -1107,6 +1229,28 @@
       <td colspan=2 class="流">au</td>
       <td colspan=2 class="流">au</td>
     </tr>
+    <tr class="台語">
+      <td colspan=2></td>
+      <td colspan=2 class="効">iau<br>n: iaunn</td>
+      <td colspan=2 class="効">iau</td>
+      <td colspan=2 class="効">iau</td>
+      <td colspan=2 class="効">au<br>n/m/ng: aunn</td>
+      <td colspan=2 class="効">o<br>n/m/xr: onn</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="流">o, io, onn</td>
+      <td class="流">P: u, iu, oo, onn<br>D: iu, iunn, oo<br>K: iu</td>
+      <td colspan=2 class="流">iu</td>
+      <td colspan=2 class="流">iu</td>
+    </tr>
     <tr class="朝鮮語">
       <td colspan=2></td>
       <td colspan=2 class="効">o, yo<br>PTK: yo<br>CS: o</td>
@@ -1262,6 +1406,28 @@
       <td colspan=2 class="深">am 'an'</td>
       <td colspan=2 class="深">am 'an'</td>
     </tr>
+    <tr class="台語">
+      <td colspan=2 class="咸">am [iam]</td>
+      <td colspan=2 class="咸">am</td>
+      <td colspan=2 class="咸">iam</td>
+      <td colspan=2 class="咸">iam</td>
+      <td colspan=2 class="咸">am</td>
+      <td colspan=2 class="咸">am</td>
+      <td class="咸">iam</td>
+      <td></td>
+      <td class="咸">am</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="咸">uan, ang</td>
+      <td></td>
+      <td></td>
+      <td colspan=2 class="深">im, in</td>
+      <td colspan=2 class="深">im, in</td>
+    </tr>
     <tr class="朝鮮語">
       <td colspan=2 class="咸">am</td>
       <td colspan=2 class="咸">yeom</td>
@@ -1416,6 +1582,28 @@
       <td></td>
       <td colspan=2 class="深">ap 'at'</td>
       <td colspan=2 class="深">ap 'at'</td>
+    </tr>
+    <tr class="台語">
+      <td colspan=2 class="咸">ap</td>
+      <td colspan=2 class="咸">ap</td>
+      <td colspan=2 class="咸">l/s: iap<br>C: iap, ip</td>
+      <td colspan=2 class="咸">l/s: iap<br>C: iap, ip</td>
+      <td colspan=2 class="咸">ap</td>
+      <td colspan=2 class="咸">ap</td>
+      <td class="咸">iap</td>
+      <td></td>
+      <td class="咸">ap</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="咸">uat</td>
+      <td></td>
+      <td></td>
+      <td colspan=2 class="深">ip</td>
+      <td colspan=2 class="深">ip</td>
     </tr>
     <tr class="朝鮮語">
       <td colspan=2 class="咸">ap</td>
@@ -1604,6 +1792,36 @@
       <td></td>
       <td></td>
     </tr>
+    <tr class="台語">
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ong</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing</td>
+      <td class="宕梗">ing, ong</td>
+      <td class="宕梗">ong, ing</td>
+      <td class="宕梗">ong</td>
+      <td class="宕梗">ong</td>
+      <td class="宕梗">iang, iong<br>C/S: iang, iong, ong</td>
+      <td class="宕梗">ong</td>
+      <td class="曽">ing</td>
+      <td class="曽">ong</td>
+      <td class="曽">--</td>
+      <td class="曽">ing</td>
+      <td class="江">PK: ang<br>D: ong</td>
+      <td class="通">ong</td>
+      <td></td>
+      <td class="通">iong 'ong'</td>
+      <td class="通">ong</td>
+      <td class="通">iong 'ong'</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr class="朝鮮語">
       <td class="宕梗">PCK: aeng, yeong<br>T: eong</td>
       <td class="宕梗">oeng</td>
@@ -1686,9 +1904,9 @@
       <td class="江">P/Sr: ag, og<br>K: ag<br>Tr: og</td>
       <td class="通">P: u<br>K: u, ug<br>S: og, yug<br>T/l: og, ug, u</td>
       <td></td>
-      <td class="通">PK: u, ug<br>j: ju, jug, jog<br>Tь: yu<br>S: yu, yug, u<br>T/l: yug</td>
+      <td class="通">PK: u, ug<br>j: yu, yug, yog<br>Tь: yu<br>S: yu, yug, u<br>T/l: yug</td>
       <td class="通">P: u<br>K: u, ug<br>S: og, yug<br>T/l: og, ug, u</td>
-      <td class="通">PK: u, ug<br>m: u<br>j: ju<br>Sr: yu, og<br>Tr/l: yug</td>
+      <td class="通">PK: u, ug<br>m: u<br>j: yu<br>Sr: yu, og<br>Tr/l: yug</td>
       <td></td>
       <td></td>
       <td></td>
@@ -1816,6 +2034,36 @@
       <td></td>
       <td></td>
     </tr>
+    <tr class="台語">
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ok, ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik</td>
+      <td class="宕梗">ik, ok, a</td>
+      <td class="宕梗">ok, ik</td>
+      <td class="宕梗">ok</td>
+      <td class="宕梗">ok</td>
+      <td class="宕梗">iok</td>
+      <td class="宕梗">iok</td>
+      <td class="曽">ik, ok</td>
+      <td class="曽">ik, ok</td>
+      <td class="曽">ik</td>
+      <td class="曽">ik</td>
+      <td class="江">ak, ok</td>
+      <td class="通">ok</td>
+      <td></td>
+      <td class="通">iok 'ok'</td>
+      <td class="通">ok</td>
+      <td class="通">iok 'ok'</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr class="朝鮮語">
       <td class="宕梗">aek, yeok</td>
       <td class="宕梗">oek</td>
@@ -1894,11 +2142,11 @@
       <td class="曽">oku</td>
       <td class="曽">oku, waku</td>
       <td class="曽">wiki</td>
-      <td class="曽">K/S: oku<br>j: joku<br>Sr/Tь/nь: iki<br>Tr/l: iki, yoku, oku</td>
+      <td class="曽">K/S: oku<br>j: yoku<br>Sr/Tь/nь: iki<br>Tr/l: iki, yoku, oku</td>
       <td class="江">P/K/Sr: aku, oku<br>m: yaku<br>Tr: aku, yoku, yaku</td>
       <td class="通">oku<br>q: voku</td>
       <td></td>
-      <td class="通">P/K/Tь/S/l: oku<br>j: joku<br>nь: iku</td>
+      <td class="通">P/K/Tь/S/l: oku<br>j: yoku<br>nь: iku</td>
       <td class="通">oku<br>q: voku</td>
       <td class="通">P: uku<br>m/l: oku<br>K/nь/Tr: iku<br>Sr/Tь: yuku<br>S: yuku, uku</td>
       <td></td>
@@ -1953,24 +2201,9 @@
     <dt class="通">　　</dt>
     <dd>通摂</dd>
   </dl>
+  <iframe src="https://github.com/notolyte/rhyme_comparison/#readme"></iframe>
   <section>
-    <h2>このページについて</h2>
-    <p><a href="https://twitter.com/sosoBOTpi">はすじょいさん</a>がお作りになった<a
-        href="https://sozysozbot.github.io/zyegnio_xrynmu/%E9%9A%8B%E8%AA%9E%E6%AF%8D%E9%9F%B3%E8%A1%A84_.html">隋語母音表4</a>を改変し，<a
-        href="https://nk2028.shn.hk/">nk2028</a>の方々がお作りになった<a
-        href="https://nk2028.shn.hk/qieyun-autoderiver/">切韻音系自動推導器</a>にある，<a
-        href="https://twitter.com/graphemecluster">graphemeclusterさん</a>と<a
-        href="https://twitter.com/ayaka4f">三日月綾香</a>さんがお書きになった普通話と広州話を推導する程序に従って対応する現代発音を各韻の下に付したものです。朝鮮語は，Seussischfolkさんの<a
-        href="https://zhuanlan.zhihu.com/p/533405769">朝鮮語漢字音韻母規律（V1.0）</a>を参照しました。ただし本表は網羅性より傾向性の把握を重視し，一部の情報を省略しました。日本語は，はすじょいさんの<a
-        href="https://sozysozbot.github.io/kanzihom_taihogxeu/%E5%AF%BE%E5%BF%9C%E8%A1%A8.html">日本漢字音・中国中古音対応表
-        隋拼・Segsyoxafu版</a>に準拠し，Segsyoxafuで記しています。Segsyoxafuは渡邉隆之さんによる日本語の正書法です。読み方は<a
-        href="https://segsyoxafu.wordpress.com/">Segsyoxafu</a>を参照してください。（ただし，この表の限りにおいては-ng由来のイとウをgと表す以外は説明不要だと思います。）なお，オリジナルのSegsyoxafuでは拗音のyとヤ行のjを書き分けるのですが，不要な煩雑さを避ける観点から，この表ではyで統一しています。
-    </p>
-    <p>個人用に作ったものなので，内容の正確さについてはあくまで参考程度にお願いします。また元資料をお作りになった各位に許可をいただいたものではないので引用等はご遠慮ください。
-    </p>
-    <h2>検索機能について</h2>
-    <p>ある発音を検索したあと，別の発音を検索しても，前の検索で強調された結果は消えません。これは，複数の結果を強調表示して比較できるようにするためのものです。前の結果を消したい場合は，clear
-      resultsボタンで先に結果を消去してください。</p>
+
   </section>
   <script src="script.js"></script>
 </body>
