@@ -1,6 +1,18 @@
-h1 {
+header {
+    position: relative;
+}
+
+header p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1rem;
+    margin: 0;
+}
+
+header h1 {
     font-size: 1rem;
-    font-weight: normal;
+    line-height: 1rem;
 }
 
 fieldset,
@@ -127,16 +139,7 @@ dd {
     margin-left: 50px;
 }
 
-section {
-    clear: both;
-}
 
 .hidden {
     display: none;
-}
-
-iframe {
-    width: 100%;
-    border: 0;
-    min-height: 35rem;
 }
