@@ -83,7 +83,7 @@ function search(keyword, dialects) {
                             break;
                         }
                     }
-
+                    targettext = targettext.normalize("NFD").replace(/[\u0302]/g, "");
                 }
                 if (targettext.includes(" " + keyword + " ")) {
                     targetcell.classList.add("hitcells");
