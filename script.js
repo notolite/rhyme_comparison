@@ -77,11 +77,9 @@ function search(keyword, dialects) {
                     for (let k = 0; k < zenji.length; k++) {
                         if (zenji[k]["letter"] == keyword) {
                             keyword = zenji[k]["zuipin"].normalize("NFD").replace(/[\u0301\u0302]/g, "").slice(1);
-                            console.log(keyword);
                             if (keyword.indexOf("h") == 0) {
                                 keyword = keyword.slice(1);
                             }
-                            console.log(keyword);
                             break;
                         }
                     }
