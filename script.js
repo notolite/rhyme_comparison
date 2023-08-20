@@ -1,9 +1,19 @@
 let dialectnum = 8; //方言追加時はここを変更
+let zenji;
+async function readFile() {
+    const requestURL =
+        "https://raw.githubusercontent.com/notolyte/rhyme_comparison/main/zenji.json";
+    const request = new Request(requestURL);
+
+    const response = await fetch(request);
+    zenji = await response.json();
+}
 document.getElementById("hidebutton").addEventListener("click", () => {
     hideMain();
 })
 window.onload = () => {
     hideMain();
+    readFile();
 }
 function hideMain() {
     const rows = document.getElementsByTagName("table")[0].rows;
@@ -11,7 +21,6 @@ function hideMain() {
     setRowSpan(rows, hide);
     for (let i = 0; i < dialectnum - 2; i++) {
         const targetrows = Array.from(document.getElementsByClassName(document.forms.hide.h_row[i].value));
-        console.log(targetrows);
         if (document.forms.hide.h_row[i].checked) {
             removeHideAttribute(targetrows);
         } else {
@@ -36,7 +45,7 @@ function removeHideAttribute(rows) {
 document.getElementById("searchbutton").addEventListener("click", () => {
     let keyword = document.forms.search.entry.value;
     let dialects = new Array();
-    for (let i = 0; i < dialectnum - 2; i++) {
+    for (let i = 0; i < dialectnum - 1; i++) {
         if (document.forms.search.s_row[i].checked) {
             dialects.push(document.forms.search.s_row[i].value);
         }
@@ -64,6 +73,18 @@ function search(keyword, dialects) {
                 let targetcell = targettable.rows[dialectnum * i + parseInt(dialect) + 2].cells[j];
                 let targettext = targetcell.innerText;
                 targettext = " " + targettext.replaceAll(/([\[\]\(\)"',])/g, "").replaceAll(/\n/g, " ") + " ";
+                if (dialect == "1") {
+                    for (let k = 0; k < zenji.length; k++) {
+                        if (zenji[k]["letter"] == keyword) {
+                            keyword = zenji[k]["zuipin"].slice(1);
+                            if (keyword.indexOf(0) == "h") {
+                                keyword.slice(1);
+                            }
+                            break;
+                        }
+                    }
+
+                }
                 if (targettext.includes(" " + keyword + " ")) {
                     targetcell.classList.add("hitcells");
                     hit++;
