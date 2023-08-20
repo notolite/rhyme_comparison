@@ -1,6 +1,18 @@
-h1 {
+header {
+    position: relative;
+}
+
+header p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1rem;
+    margin: 0;
+}
+
+header h1 {
     font-size: 1rem;
-    font-weight: normal;
+    line-height: 1rem;
 }
 
 fieldset,
@@ -28,14 +40,14 @@ table tr th {
 }
 
 /* 方言追加時に変更 */
-table tr:nth-last-of-type(7n) td {
+table tr:nth-last-of-type(8n) td {
     border-top: #888 1px solid;
 }
 
-/*方言追加時に変更 始まり：3+方言数×4 終わり：3+方言数×7 */
-table tr:not(:nth-of-type(n+32):nth-of-type(-n+52)) :is(td:first-of-type, td:nth-of-type(9), td:nth-of-type(15), td:nth-of-type(19), td:nth-of-type(23), td:nth-of-type(25), th:nth-of-type(2), th:nth-of-type(10), th:nth-of-type(16), th:nth-of-type(20), th:nth-of-type(24), th:nth-of-type(26)),
+/*方言追加時に変更 始まり：(方言数+1)×4 終わり：3+方言数×7 */
+table tr:not(:nth-of-type(n+36):nth-of-type(-n+59)) :is(td:first-of-type, td:nth-of-type(9), td:nth-of-type(15), td:nth-of-type(19), td:nth-of-type(23), td:nth-of-type(25), th:nth-of-type(2), th:nth-of-type(10), th:nth-of-type(16), th:nth-of-type(20), th:nth-of-type(24), th:nth-of-type(26)),
 table tr:first-of-type th,
-table tr:nth-of-type(n+32):nth-of-type(-n+52) :is(td:first-of-type, td:nth-of-type(5), td:nth-of-type(9), td:nth-of-type(13), td:nth-of-type(17), td:nth-of-type(19)) {
+table tr:nth-of-type(n+36):nth-of-type(-n+59) :is(td:first-of-type, td:nth-of-type(5), td:nth-of-type(9), td:nth-of-type(13), td:nth-of-type(17), td:nth-of-type(19)) {
     border-left: #888 1px solid;
 }
 
@@ -127,9 +139,6 @@ dd {
     margin-left: 50px;
 }
 
-section {
-    clear: both;
-}
 
 .hidden {
     display: none;

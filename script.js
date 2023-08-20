@@ -1,4 +1,4 @@
-let dialectnum = 7; //方言追加時はここを変更
+let dialectnum = 8; //方言追加時はここを変更
 document.getElementById("hidebutton").addEventListener("click", () => {
     hideMain();
 })
