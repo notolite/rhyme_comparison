@@ -23,10 +23,13 @@
 [nk2028](https://nk2028.shn.hk/)のみなさまの[切韻音系自動推導器](https://nk2028.shn.hk/qieyun-autoderiver/)を参考にさせていただきました。普通話は[graphemecluster](https://twitter.com/graphemecluster)さん，広州話は[三日月綾香](https://twitter.com/ayaka4f)さんのものです。
 
 ### 台湾語
-駱嘉鵬先生の「[古今音類對應規律](http://www.kaphing.idv.tw/loh/hanyu/course/c6.htm)」（『[漢語音韻史](http://www.kaphing.idv.tw/loh/hanyu/index.htm)』）を資料に分析しました。元データで一例しかない対応は例外と見做して取り上げませんでした。
+駱嘉鵬先生の「[古今音類対応應規律](http://www.kaphing.idv.tw/loh/hanyu/course/c6.htm)」（『[漢語音韻史](http://www.kaphing.idv.tw/loh/hanyu/index.htm)』）を資料に分析しました。元データで一例しかない対応は例外と見做して取り上げませんでした。
+
+### 越南語
+幹間建見缶慣巻涓さんの[漢越音声韻規律1.0版本](https://zhuanlan.zhihu.com/p/543167846)を参照しました。ただし、本表は取り敢えず作ったものなので、声母ごとの細かな分類はしていません。
 
 ### 朝鮮語
-Seussischfolkさんの[朝鮮語漢字音韻母規律（V1.0）](https://zhuanlan.zhihu.com/p/533405769)を参照しました。ただし本表は網羅性より傾向性の把握を重視し，一部の情報を省略しました。
+Seussischfolkさん（上記幹間建見缶慣巻涓さんと同一人物）の[朝鮮語漢字音韻母規律（V1.0）](https://zhuanlan.zhihu.com/p/533405769)を参照しました。ただし本表は網羅性より傾向性の把握を重視し，一部の情報を省略しました。
 
 ### 日本語
 はすじょいさんの[日本漢字音・中国中古音対応表隋拼・Segsyoxafu版](https://sozysozbot.github.io/kanzihom_taihogxeu/%E5%AF%BE%E5%BF%9C%E8%A1%A8.html)を参考にさせていただきました。本表でも日本語は[Segsyoxafu](https://segsyoxafu.wordpress.com/)で記述してあります。ただし，オリジナルのSegsyoxafuでは拗音のyとヤ行のjを書き分けるのですが，本表ではyに統一しました。
