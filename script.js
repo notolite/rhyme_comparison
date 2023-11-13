@@ -1,4 +1,4 @@
-let dialectnum = 8; //方言追加時はここを変更
+let dialectnum = 9; //方言追加時はここを変更
 let zenji;
 async function readFile() {
     const requestURL =
